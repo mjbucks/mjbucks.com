@@ -10,12 +10,15 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: '#f5f5f4', minHeight: '100vh' }}>
       <Navbar />
       <main>
-        {/* <Hero />
-        <About />
-        <Projects />
+        { 
+          <>
+          <Hero />
+         <About />
+         </>
+        /* <Projects />
         <Skills />
         <Experience />
         <Education />

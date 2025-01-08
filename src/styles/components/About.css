@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8vh 5vw;
+  background-color: #f5f5f4;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.about-content {
+  max-width: 90vw;
+  width: 100%;
+}
+
+.about-content h2 {
+  font-size: 4vh;
+  color: #0f172a;
+  margin-bottom: 5vh;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-family: 'Inter', sans-serif;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 5vw;
+  align-items: center;
+}
+
+.about-text {
+  text-align: left;
+}
+
+.about-text p {
+  font-size: 2.2vh;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 3vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 3vh;
+}
+
+.highlight-item {
+  text-align: center;
+  padding: 3vh 2vw;
+  background-color: #f8fafc;
+  border-radius: 2vh;
+  box-shadow: 0 0.4vh 0.6vh -0.1vh rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-0.5vh);
+}
+
+.highlight-number {
+  display: block;
+  font-size: 4vh;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 1vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.highlight-label {
+  display: block;
+  font-size: 1.8vh;
+  color: #64748b;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 5vh;
+  }
+
+  .about-text p {
+    font-size: 2vh;
+  }
+
+  .highlight-item {
+    padding: 2vh 2vw;
+  }
+
+  .highlight-number {
+    font-size: 3.5vh;
+  }
+
+  .highlight-label {
+    font-size: 1.6vh;
+  }
+} 
