@@ -1,40 +1,114 @@
 import React from 'react';
-// import '../styles/components/Skills.css';
+import '../styles/components/Skills.css';
 
-const SkillCategory = ({ category, skills }) => (
+const SkillCategory = ({ title, items }) => (
   <div className="skill-category">
-    <h3>{category}</h3>
-    <div className="skills-grid">
-      {skills.map((skill, index) => (
-        <div key={index} className="skill-item">
-          <span className="skill-name">{skill.name}</span>
-          <div className="skill-level" style={{ width: `${skill.level}%` }}></div>
-        </div>
+    <div className="skill-header">
+      <h3>{title}</h3>
+    </div>
+    <div className="skill-items">
+      {items.map((item, index) => (
+        <span key={index} className="skill-item">{item}</span>
       ))}
     </div>
   </div>
 );
 
 const Skills = () => {
-  const skillsData = {
-    frontend: [
-      { name: "React", level: 90 },
-      { name: "JavaScript", level: 85 },
-    ],
-    cloud: [
-      { name: "AWS S3", level: 80 },
-      { name: "AWS Lambda", level: 75 },
-      { name: "Databricks", level: 85 },
-    ],
-    // Add more categories
-  };
+  const skillsData = [
+    {
+      title: "Programming Languages",
+      items: [
+        "JavaScript",
+        "Python",
+        "Java",
+        "C",
+        "C++",
+        "C#",
+        "SQL",
+        "HTML/CSS",
+        "Shell Script",
+        "TypeScript"
+      ]
+    },
+    {
+      title: "Technologies & Frameworks",
+      items: [
+        "React",
+        "Node.js",
+        "AWS",
+        "Databricks",
+        "Linux",
+        "Git",
+        "REST APIs",
+        "Service Now"
+      ]
+    },
+    {
+      title: "Data Structures",
+      items: [
+        "Arrays & Strings",
+        "Linked Lists",
+        "Hash Tables",
+        "Binary Trees",
+        "Heaps",
+        "Graphs",
+        "Stacks & Queues",
+        "Bloom Filters"
+      ]
+    },
+    {
+      title: "Algorithms",
+      items: [
+        "Binary Search",
+        "Depth/Breadth First Search",
+        "Dijkstra's Algorithm",
+        "Dynamic Programming",
+        "Sorting Algorithms",
+        "Tree Traversal",
+        "Graph Algorithms",
+        "Greedy Algorithms"
+      ]
+    },
+    {
+      title: "Professional Skills",
+      items: [
+        "Scrum/Agile",
+        "Unit Testing",
+        "Integration Testing",
+        "Code Review",
+        "Documentation",
+        "Problem Solving",
+        "Team Leadership",
+        "Technical Writing"
+      ]
+    },
+    {
+      title: "Certifications/Achievements",
+      items: [
+        "Introduction to AWS Cloud Certification",
+        "Scrum Team Member",
+        "Introduction to Databricks Data Engineering",
+        "Dean's List 2021-2024",
+        "3.78 GPA",
+      ]
+    }
+  ];
 
   return (
-    <section className="skills">
-      <h2>Skills & Technologies</h2>
-      {Object.entries(skillsData).map(([category, skills]) => (
-        <SkillCategory key={category} category={category} skills={skills} />
-      ))}
+    <section className="skills" id="skills">
+      <div className="skills-content">
+        <h2>Skills & Expertise</h2>
+        <div className="skills-grid">
+          {skillsData.map((category, index) => (
+            <SkillCategory 
+              key={index}
+              title={category.title}
+              items={category.items}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

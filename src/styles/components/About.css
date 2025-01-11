@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8vh 5vw;
+  padding-top: 8vh;
   background-color: #f5f5f4;
   font-family: 'Inter', sans-serif;
   border-bottom: 1px solid #e5e7eb;
@@ -28,7 +28,7 @@
 
 .about-grid {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 4fr 1fr;
   gap: 5vw;
   align-items: center;
 }
@@ -46,18 +46,23 @@
 }
 
 .about-highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 4vh;
+  height: 100%;
+  padding: 4vh 0;
 }
 
 .highlight-item {
   text-align: center;
-  padding: 3vh 2vw;
+  padding: 2vh 2vw;
   background-color: #f8fafc;
   border-radius: 2vh;
   box-shadow: 0 0.4vh 0.6vh -0.1vh rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .highlight-item:hover {
@@ -101,5 +106,10 @@
 
   .highlight-label {
     font-size: 1.6vh;
+  }
+
+  .about-highlights {
+    gap: 3vh;
+    padding: 2vh 0;
   }
 } 

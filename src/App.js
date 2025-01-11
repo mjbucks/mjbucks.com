@@ -16,13 +16,13 @@ function App() {
         { 
           <>
           <Hero />
-         <About />
-         </>
-        /* <Projects />
-        <Skills />
-        <Experience />
-        <Education />
-        <Contact /> */}
+          <About />
+          <Projects />
+          <Experience />
+          <Skills />
+          <Education />
+          </>
+        }
       </main>
     </div>
   );
