@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 7%;
-  background-color: rgba(15, 23, 42, 0.95); /* Slate 900 with opacity */
+  background-color: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -21,7 +21,7 @@
 .nav-brand {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #f8fafc; /* Slate 50 */
+  color: #f8fafc;
   text-decoration: none;
   letter-spacing: -0.5px;
 }
@@ -35,7 +35,7 @@
 }
 
 .nav-links li a {
-  color: #cbd5e1; /* Slate 300 */
+  color: #cbd5e1;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -51,7 +51,7 @@
 }
 
 .nav-links li a:hover {
-  color: #60a5fa; /* Blue 400 */
+  color: #60a5fa;
 }
 
 .nav-links li a::after {
@@ -61,7 +61,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #60a5fa; /* Blue 400 */
+  background-color: #60a5fa;
   transition: width 0.2s ease;
   border-radius: 1px;
 }
@@ -85,7 +85,7 @@
   position: relative;
   width: 24px;
   height: 2px;
-  background: #f8fafc; /* Slate 50 */
+  background: #f8fafc;
   transition: all 0.3s ease;
 }
 

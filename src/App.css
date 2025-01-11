@@ -1,10 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  /* Choose one of these background colors: */
-  background-color: #f8fafc; /* Slate 50 - very light */
-  /* background-color: #f1f5f9; */ /* Slate 100 - slightly darker */
-  /* background-color: #f9fafb; */ /* Gray 50 - warm white */
-  /* background-color: #f5f5f4; */ /* Stone 100 - warm gray */
+  background-color: #f8fafc;
   min-height: 100vh;
 }
