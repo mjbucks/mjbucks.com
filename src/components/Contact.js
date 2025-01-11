@@ -1,79 +1,86 @@
 import React, { useState } from 'react';
-// import '../styles/components/Contact.css';
+import '../styles/components/Contact.css';
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
-    console.log('Form submitted:', formData);
+  const [copySuccess, setCopySuccess] = useState('');
+  
+  const contactInfo = {
+    email: "maxrohrer@iastate.edu",
+    phone: "(319) 540-6551",
+    linkedin: "https://www.linkedin.com/in/maxwell-rohrer/",
+    github: "https://github.com/mjbucks"
   };
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(contactInfo.email);
+      setCopySuccess('Copied!');
+      setTimeout(() => setCopySuccess(''), 2000);
+    } catch (err) {
+      setCopySuccess('Failed to copy');
+    }
   };
 
   return (
     <section className="contact" id="contact">
-      <h2>Get In Touch</h2>
       <div className="contact-content">
-        <div className="contact-info">
-          <div className="contact-item">
-            <h3>Email</h3>
-            <p>your.email@example.com</p>
-          </div>
-          <div className="contact-item">
-            <h3>Social</h3>
-            <div className="social-links">
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <h2>Get In Touch</h2>
+        <p className="contact-intro">
+          I'm always open to new opportunities and collaborations. 
+          Feel free to reach out if you'd like to connect!
+        </p>
+        
+        <div className="contact-grid">
+          <div className="contact-item" onClick={handleCopyEmail}>
+            <div className="contact-icon">
+              <FaEnvelope />
+            </div>
+            <div className="contact-info">
+              <h3>Email</h3>
+              <p>{contactInfo.email}</p>
+              {copySuccess && <span className="copy-feedback">{copySuccess}</span>}
             </div>
           </div>
+
+          <a href={`tel:${contactInfo.phone}`} className="contact-item">
+            <div className="contact-icon">
+              <FaPhone />
+            </div>
+            <div className="contact-info">
+              <h3>Phone</h3>
+              <p>{contactInfo.phone}</p>
+            </div>
+          </a>
+
+          <a href={contactInfo.linkedin} target="_blank" rel="noopener noreferrer" className="contact-item">
+            <div className="contact-icon">
+              <FaLinkedin />
+            </div>
+            <div className="contact-info">
+              <h3>LinkedIn</h3>
+              <p>maxwell-rohrer</p>
+            </div>
+          </a>
+
+          <a href={contactInfo.github} target="_blank" rel="noopener noreferrer" className="contact-item">
+            <div className="contact-icon">
+              <FaGithub />
+            </div>
+            <div className="contact-info">
+              <h3>GitHub</h3>
+              <p>mjbucks</p>
+            </div>
+          </a>
         </div>
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-          </div>
-          <button type="submit" className="submit-btn">Send Message</button>
-        </form>
       </div>
+      
+      <footer className="footer">
+        <div className="copyright">
+          <p>&copy; {new Date().getFullYear()} Maxwell Rohrer. All rights reserved.</p>
+          <p>Designed and built by Maxwell Rohrer</p>
+        </div>
+      </footer>
     </section>
   );
 };

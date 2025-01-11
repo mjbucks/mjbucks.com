@@ -21,6 +21,7 @@ function App() {
           <Experience />
           <Skills />
           <Education />
+          <Contact />
           </>
         }
       </main>
