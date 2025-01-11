@@ -6,7 +6,7 @@ const Contact = () => {
   const [copySuccess, setCopySuccess] = useState('');
   
   const contactInfo = {
-    email: "maxrohrer@iastate.edu",
+    email: "rohrermaxwell@gmail.com",
     phone: "(319) 540-6551",
     linkedin: "https://www.linkedin.com/in/maxwell-rohrer/",
     github: "https://github.com/mjbucks"
