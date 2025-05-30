@@ -20,38 +20,40 @@ const Skills = () => {
       title: "Programming Languages",
       items: [
         "JavaScript",
-        "Python",
-        "Java",
         "C",
         "C++",
-        "C#",
-        "SQL",
-        "HTML/CSS",
+        "Java",
+        "Python",
+        "Go",
+        "CSS",
         "Shell Script",
-        "TypeScript"
+        "HTML",
+        "SQL"
       ]
     },
     {
-      title: "Technologies & Frameworks",
+      title: "Technologies & Tools",
       items: [
         "React",
         "Node.js",
         "AWS",
         "Databricks",
-        "Linux",
+        "Linux CLI",
         "Git",
         "REST APIs",
-        "Service Now"
+        "Service Now",
+        "Docker"
       ]
     },
     {
       title: "Data Structures",
       items: [
-        "Arrays & Strings",
-        "Linked Lists",
+        "Bloom Filters",
+        "Binary Search Trees (BSTs)",
         "Hash Tables",
-        "Binary Trees",
         "Heaps",
+        "Doubly-Linked Lists",
+        "Arrays & Strings",
         "Graphs",
         "Stacks & Queues",
         "Bloom Filters"
@@ -73,9 +75,9 @@ const Skills = () => {
     {
       title: "Professional Skills",
       items: [
-        "Scrum/Agile",
-        "Unit Testing",
-        "Integration Testing",
+        "Debugging & Troubleshooting",
+        "Unit & Integration Testing",
+        "Agile/Scrum",
         "Code Review",
         "Documentation",
         "Problem Solving",
@@ -86,11 +88,14 @@ const Skills = () => {
     {
       title: "Certifications/Achievements",
       items: [
-        "Introduction to AWS Cloud Certification",
-        "Scrum Team Member",
-        "Introduction to Databricks Data Engineering",
-        "Dean's List 2021-2024",
-        "3.78 GPA",
+        "Introduction to AWS Cloud Certification - May 2023",
+        "Scrum Team Member Training Certification - May 2023",
+        "Databricks Introduction to Data Engineering - June 2023",
+        "Expert rating in NoRegret Skills for GitHub Collaboration",
+        "Expert rating in NoRegret Skills for Python Data Essentials",
+        "Expert rating in NoRegret Skills for AWS Architecting",
+        "Dean's List 2021-2025",
+        "Cumulative 3.72 GPA"
       ]
     }
   ];

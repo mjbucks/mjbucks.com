@@ -9,7 +9,7 @@ const About = () => {
         <div className="about-grid">
           <div className="about-text">
             <p>
-            My name is Maxwell Rohrer, and I am a Senior at Iowa State currently pursuing full time employment in a software engineering or cyber security field. 
+              My name is Maxwell Rohrer, a Senior at Iowa State University majoring in Computer Science with a minor in Cybersecurity Engineering. I am passionate about building high-quality software and solving complex problems.
             </p>
             <p>
             As a software and data engineer, my goal is to continue to learn new skills and innovate the world every day. Some programming languages I am proficient in are Javascript, C, C++, SQL, Java, Python, C#, HTML, CSS, etc.
@@ -28,8 +28,8 @@ const About = () => {
               <span className="highlight-label">Years of Experience</span>
             </div>
             <div className="highlight-item">
-              <span className="highlight-number">3.78</span>
-              <span className="highlight-label">Cumulative GPA</span>
+              <span className="highlight-number">3.72</span>
+              <span className="highlight-label">Final Cumulative GPA</span>
             </div>
             <div className="highlight-item">
               <span className="highlight-number">10,000+</span>

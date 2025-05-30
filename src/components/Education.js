@@ -41,9 +41,9 @@ const Education = () => {
     title: "Bachelor's Degree",
     institution: "Iowa State University",
     details: [
-      "Cumulative 3.78 GPA | ISU Dean's List fall of 2021/2022/2023, spring of 2022/2023/2024",
+      "Cumulative 3.72 GPA | ISU Dean's List fall of 2021/2022/2023, spring of 2022/2023/2024/2025",
       "Major: Computer Science | Minor: Cybersecurity Engineering | Expected graduation date: May 2025",
-      "Coursework: Data Structures, Large Dataset Algorithms, Cryptography, Computer Architecture, User Interfaces",
+      "Coursework: Data Structures, Large Dataset Algorithms, Cryptography, Computer Architecture, Networking, User Interfaces",
       "Undergraduate Research and lab experience at Iowa State University"
     ],
     certifications: [
@@ -66,4 +66,4 @@ const Education = () => {
   );
 };
 
-export default Education; 
+export default Education;

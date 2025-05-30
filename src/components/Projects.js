@@ -29,10 +29,16 @@ const Projects = () => {
   const projects = [
     {
       title: "mjbucks.com",
-      description: "A modern, responsive portfolio website built from scratch showcasing my projects and skills. Deployed using AWS services: S3 for static hosting, CloudFront for content delivery, Route53 for DNS management, and ACM for SSL certification. Features smooth scrolling, responsive design, and interactive UI components built with React.",
+      description: "Built a modern personal portfolio website that showcases skills and experiences as a software engineer. Created the site with the React.js frontend framework, displaying modern styling techniques. Hosted the project in an S3 general purpose bucket, configured to statically host the content it holds. Distributed the content of the site to AWS Cloudfront for fast response times on a global scale. Registered the domain in AWS Route 53, routing all mjbucks.com traffic through CloudFront. Configured SSL certificates through AWS ACM for authentication, enabling client trust in the site.",
       image: "/images/project1.png",
-      technologies: ["React", "CloudFront", "Route53", "S3", "ACM", "Responsive Design"],
+      technologies: ["React", "CloudFront", "Route53", "S3", "ACM", "AWS"],
       githubLink: "https://github.com/mjbucks/mjbucks.com"
+    },
+    {
+      title: "Lockheed Martin | HPC Monitoring Software",
+      description: "Built a scalable telemetry system for HPC clusters, enabling real-time node monitoring with low resource usage. Engineered lightweight Go-based agents to scrape real-time system metrics from sensors and transmit via TCP. Developed a centralized SQLite database and API interface for real-time telemetry visualization using Go-Echarts.",
+      image: "/images/project4.png",
+      technologies: ["Go", "SQLite", "Go-Echarts", "TCP/IP", "Telemetry", "HPC", "Docker"],
     },
     {
       title: "Smackdown",
@@ -47,12 +53,6 @@ const Projects = () => {
       image: "/images/project2.png",
       technologies: ["C++", "Ray-Tracing", "3D Graphics", "Linear Algebra"],
       githubLink: "https://github.com/mjbucks/COMS-336-imager/"
-    },
-    {
-      title: "Pi-Hole Ad Blocker",
-      description: "Configured and deployed a network-wide ad blocker using a Raspberry Pi 4 running Linux. Implemented DNS-level ad blocking that filters traffic before it reaches devices, resulting in faster browsing and reduced network load. Added over 1.5 million domain blocklist entries and had low query response times.",
-      image: "/images/project3.png",
-      technologies: ["Raspberry Pi", "Linux", "Pi-Hole"],
     }
   ];
 
