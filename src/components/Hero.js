@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
         <div className="hero-text">
           <h1>Maxwell Rohrer</h1>
-          <h2>Software Engineer | Iowa State University Graduate | Computer Science & Cybersecurity</h2>
+          <h2>Software Engineer | Iowa State University Magna Cum Laude Graduate | Computer Science & Cybersecurity</h2>
           <div className="cta-buttons">
             <button 
               className="cta-primary"

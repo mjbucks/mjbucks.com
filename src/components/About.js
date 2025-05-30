@@ -9,7 +9,7 @@ const About = () => {
         <div className="about-grid">
           <div className="about-text">
             <p>
-              My name is Maxwell Rohrer, a Senior at Iowa State University majoring in Computer Science with a minor in Cybersecurity Engineering. I am passionate about building high-quality software and solving complex problems.
+              My name is Maxwell Rohrer, a Magna Cum Laude graduate from Iowa State University with a major in Computer Science and a minor in Cybersecurity Engineering. I am passionate about building high-quality software and solving complex problems.
             </p>
             <p>
             As a software and data engineer, my goal is to continue to learn new skills and innovate the world every day. Some programming languages I am proficient in are Javascript, C, C++, SQL, Java, Python, C#, HTML, CSS, etc.
